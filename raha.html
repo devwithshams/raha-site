@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHA Computer Business Center & Mini Café - Kaduna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body class="font-sans bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-primary-light dark:bg-primary-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-laptop-code text-2xl text-secondary-light dark:text-secondary-dark"></i>
+                <span class="text-xl font-bold">RAHA CBC & Café</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Home</a>
+                <a href="#services" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Services</a>
+                <a href="#team" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Our Team</a>
+                <a href="#gallery" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Gallery</a>
+                <a href="#contact" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Contact</a>
+                
+                <button id="theme-toggle" class="ml-4 theme-toggle">
+                    <i class="fas fa-moon text-lg" id="theme-icon"></i>
+                </button>
+            </div>
+            
+            <div class="md:hidden flex items-center">
+                <button id="theme-toggle-mobile" class="mr-4 theme-toggle">
+                    <i class="fas fa-moon text-lg" id="theme-icon-mobile"></i>
+                </button>
+                <button class="focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-primary-dark py-2" id="mobile-menu">
+            <div class="container mx-auto px-4 flex flex-col space-y-3">
+                <a href="#home" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Home</a>
+                <a href="#services" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Services</a>
+                <a href="#team" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Our Team</a>
+                <a href="#gallery" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Gallery</a>
+                <a href="#contact" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">RAHA Computer Business Center & Mini Café</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Your one-stop solution for all digital services, printing needs, and refreshing breaks in Kaduna.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-secondary-light dark:bg-secondary-dark text-primary-light dark:text-primary-dark font-bold px-6 py-3 rounded-lg hover:bg-yellow-200 dark:hover:bg-yellow-600 transition">Our Services</a>
+                <a href="#contact" class="bg-transparent border-2 border-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-primary-light dark:hover:text-primary-dark transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-4">About Our Business</h2>
+                    <p class="mb-4">Located in the heart of Kaduna, RAHA Computer Business Center & Mini Café has been serving the community with top-notch digital services and printing solutions since 2015.</p>
+                    <p class="mb-4">We combine technical expertise with a welcoming atmosphere, offering both professional services and a comfortable space to enjoy refreshments while you wait.</p>
+                    <p>Our commitment to quality, efficiency, and customer satisfaction sets us apart in the industry.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Our office" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-2">Our Comprehensive Services</h2>
+                <div class="w-20 h-1 bg-accent-light dark:bg-accent-dark mx-auto"></div>
+                <p class="mt-4 max-w-2xl mx-auto">We offer a wide range of digital and printing services to meet all your business and personal needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-user-check text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Online Registration</h3>
+                    <p>Professional assistance with all types of online registrations including JAMB, WAEC, and government services.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-keyboard text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Typesetting</h3>
+                    <p>Expert document formatting and typesetting for reports, theses, proposals, and other professional documents.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-copy text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Photocopy Services</h3>
+                    <p>High-quality photocopying in various sizes and paper types, including color copying options.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-id-card text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Plastic ID Cards</h3>
+                    <p>Custom-designed plastic ID cards for schools, businesses, and organizations with various security features.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-layer-group text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Lamination</h3>
+                    <p>Document lamination services in various sizes to protect and preserve your important papers and cards.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-book text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Binding</h3>
+                    <p>Professional binding services including spiral, thermal, and hardcover binding for reports and projects.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-calendar-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Calendar Printing</h3>
+                    <p>Custom calendar printing with your photos or designs, available in various sizes and formats.</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-sticky-note text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sticker Production</h3>
+                    <p>High-quality sticker printing for branding, promotions, or personal use with various material options.</p>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-paint-brush text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Graphics Design</h3>
+                    <p>Professional graphic design services for logos, flyers, banners, and other marketing materials.</p>
+                </div>
+                
+                <!-- Service 10 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-car text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Car Branding</h3>
+                    <p>Complete vehicle branding solutions including design, printing, and installation of car wraps and decals.</p>
+                </div>
+                
+                <!-- Service 11 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-passport text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Passport Photos</h3>
+                    <p>Professional passport photo services meeting all official requirements for various applications.</p>
+                </div>
+                
+                <!-- Service 12 -->
+                <div class="bg-card-light dark:bg-card-dark rounded-lg shadow-md p-6 service-card transition duration-300">
+                    <div class="text-primary-light dark:text-primary-dark mb-4">
+                        <i class="fas fa-coffee text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mini Café</h3>
+                    <p>Refresh yourself with our selection of hot and cold beverages while waiting for your services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-2">Meet Our Team</h2>
+                <div class="w-20 h-1 bg-accent-light dark:bg-accent-dark mx-auto"></div>
+                <p class="mt-4 max-w-2xl mx-auto">Our dedicated professionals are committed to providing excellent service.</p>
+            </div>
+
+            <!-- Boss Section -->
+            <div class="text-center mb-16">
+                <h3 class="text-2xl font-semibold text-primary-light dark:text-primary-dark mb-6">Our Founder & CEO</h3>
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Founder" class="boss-circle mb-4">
+                    <h4 class="text-xl font-bold">Alhaji Raha</h4>
+                    <p class="text-accent-light dark:text-accent-dark mb-2">Founder & CEO</p>
+                    <p class="max-w-2xl mx-auto">With over 15 years of experience in the digital services industry, Alhaji Raha founded RAHA CBC & Café with a vision to provide comprehensive digital solutions combined with excellent customer service. His leadership has guided our business to become one of the most trusted in Kaduna.</p>
+                </div>
+            </div>
+
+            <!-- Workers Section -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-primary-light dark:text-primary-dark mb-8 text-center">Our Professional Staff</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Worker 1 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                             alt="Worker 1" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Amina Yusuf</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">Senior Graphic Designer</p>
+                        <p>Amina has been with RAHA CBC for 5 years and specializes in creating stunning visual designs for our clients. She holds a diploma in Computer Graphics and is proficient in Adobe Creative Suite.</p>
+                    </div>
+                    
+                    <!-- Worker 2 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Worker 2" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Ibrahim Mohammed</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">IT Specialist</p>
+                        <p>Ibrahim handles all our technical services including online registrations, system troubleshooting, and network setup. With 7 years of experience, he's our go-to expert for all IT-related services.</p>
+                    </div>
+                    
+                    <!-- Worker 3 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Worker 3" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Fatima Abdullahi</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">Printing Specialist</p>
+                        <p>Fatima manages our printing department with expertise in various printing techniques. She ensures all our printed materials meet the highest quality standards before reaching our customers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apprentices Section -->
+            <div>
+                <h3 class="text-2xl font-semibold text-primary-light dark:text-primary-dark mb-8 text-center">Our Apprentices</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Apprentice 1 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Apprentice 1" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Zainab Musa</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">Graphic Design Apprentice</p>
+                        <p>Zainab is learning the ropes of graphic design under Amina's guidance. She's passionate about creating beautiful designs and is quickly developing her skills in Adobe Illustrator and Photoshop.</p>
+                    </div>
+                    
+                    <!-- Apprentice 2 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Apprentice 2" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Yusuf Bello</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">IT Support Apprentice</p>
+                        <p>Yusuf is training under Ibrahim to become an IT specialist. He's particularly interested in networking and hardware troubleshooting, and shows great promise in solving technical problems.</p>
+                    </div>
+                    
+                    <!-- Apprentice 3 -->
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md text-center team-member">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Apprentice 3" class="profile-circle mx-auto mb-4">
+                        <h4 class="text-xl font-bold">Aisha Kabiru</h4>
+                        <p class="text-accent-light dark:text-accent-dark mb-2">Customer Service Apprentice</p>
+                        <p>Aisha is learning all aspects of customer service and front desk operations. Her friendly personality and quick learning make her a valuable addition to our team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-2">Our Work Gallery</h2>
+                <div class="w-20 h-1 bg-accent-light dark:bg-accent-dark mx-auto"></div>
+                <p class="mt-4 max-w-2xl mx-auto">See samples of our work, equipment, and the professional environment we provide.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Our workspace" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Printing equipment" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Lamination process" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="ID card production" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Graphic design work" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Car branding example" class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="bg-primary-light dark:bg-primary-dark text-white px-6 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-900 transition">
+                    View More Photos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-secondary-light dark:bg-secondary-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-2">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-accent-light dark:bg-accent-dark mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"RAHA CBC did an excellent job on our company ID cards. The quality is superb and they delivered on time. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 dark:bg-gray-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-600 dark:text-gray-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alhaji Musa</h4>
+                            <p class="text-sm">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Their JAMB registration assistance was a lifesaver! They made the process so easy and even helped my son with his subject combination."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 dark:bg-gray-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-600 dark:text-gray-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mrs. Adebayo</h4>
+                            <p class="text-sm">Parent</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"The car branding they done for my business vehicles has attracted so many customers. Professional work at reasonable prices."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 dark:bg-gray-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-gray-600 dark:text-gray-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mr. Emmanuel</h4>
+                            <p class="text-sm">Transport Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-light dark:text-primary-dark mb-2">Contact Us</h2>
+                <div class="w-20 h-1 bg-accent-light dark:bg-accent-dark mx-auto"></div>
+                <p class="mt-4 max-w-2xl mx-auto">Visit us or get in touch for all your digital and printing needs.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-bold text-primary-light dark:text-primary-dark mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-primary-light dark:text-primary-dark mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Address</h4>
+                                    <p>No. 12 Ahmadu Bello Way, Kaduna, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-primary-light dark:text-primary-dark mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p>+234 706 069 9299</p>
+                                    <p>+234 803 456 7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-primary-light dark:text-primary-dark mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p>talk2rahabizcenter@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-primary-light dark:text-primary-dark mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Working Hours</h4>
+                                    <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                                    <p>Saturday: 9:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-primary-light dark:text-primary-dark mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-white dark:bg-gray-700">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-white dark:bg-gray-700">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-white dark:bg-gray-700">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-white dark:bg-gray-700"></textarea>
+                            </div>
+                            <button type="submit" class="bg-primary-light dark:bg-primary-dark text-white px-6 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-900 transition w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold text-primary-light dark:text-primary-dark mb-4">Our Location</h3>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <!-- Google Map Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.963156447421!2d7.433587314795921!3d10.51451839247225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d3563b0a6a1a9%3A0x1b0e5e1b0a6a1a9!2sAhmadu%20Bello%20Way%2C%20Kaduna!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng" 
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2347060699299" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg whatsapp-btn hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-primary-light dark:bg-primary-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-secondary-light dark:text-secondary-dark"></i>
+                        <span class="text-xl font-bold">RAHA CBC & Café</span>
+                    </div>
+                    <p class="max-w-md">Your trusted partner for digital services and printing solutions in Kaduna.</p>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Services</a></li>
+                        <li><a href="#team" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Our Team</a></li>
+                        <li><a href="#gallery" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-secondary-light dark:hover:text-secondary-dark transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-primary-light dark:text-primary-dark w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary-light dark:hover:bg-secondary-dark transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white text-primary-light dark:text-primary-dark w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary-light dark:hover:bg-secondary-dark transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white text-primary-light dark:text-primary-dark w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary-light dark:hover:bg-secondary-dark transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/2347060699299" class="bg-white text-primary-light dark:text-primary-dark w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary-light dark:hover:bg-secondary-dark transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-700 dark:border-blue-900 mt-8 pt-6 text-center md:text-left">
+                <p>&copy; 2025 RAHA Computer Business Center & Mini Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
